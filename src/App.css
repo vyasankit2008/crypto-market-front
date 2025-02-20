@@ -1,0 +1,164 @@
+.app-container {
+  display: flex;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 13rem;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.content.collapsed {
+  margin-left: 5rem;
+}
+
+.sidebar.closed + .content {
+  margin-left: 5rem;
+}
+
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fetch-button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fetch-button:hover {
+  background-color: darkblue;
+}
+
+.data-display {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+.sidebar {
+  width: 13rem;
+  background-color: #222;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  transition: width 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.closed {
+  width: 5rem;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #333;
+}
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.sidebar-title {
+  font-size: 4rem;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+}
+
+.menu-button {
+  color: white !important;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.sidebar-item:hover {
+  background-color: #444;
+}
+
+.sidebar-icon {
+  color: white !important;
+  min-width: 3rem !important;
+}
+
+.sidebar.closed .sidebar-text {
+  display: none;
+}
+
+/* historical css */
+.historical-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.historical-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;  
+  min-height: 100vh;
+}
+
+/* realtime data css */
+
+.realtime-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;  
+  min-height: 100vh;
+}
+
+.realtime-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.realtime-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trade-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  min-width: 300px;
+}
+
