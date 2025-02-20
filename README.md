@@ -72,10 +72,9 @@ crypto-market-front/
   ```
 
 ## Enhancements & Future Improvements
-- Implement a **charting library** like `recharts` for better data visualization.
+- Implement Box a like or better data visualization.
 - Improve **error handling** with user-friendly messages.
 - Optimize API requests with **caching** and **debouncing**.
-- Add **dark mode** for better UI customization.
 
 ## License
 This project is licensed under the MIT License.
